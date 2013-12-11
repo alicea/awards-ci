@@ -264,6 +264,13 @@
         </div>
     </div>
 
+    <div class="item award-5">
+        <div class="jumbotron">
+                <h1>Thank you</h1>
+                <p class="lead">Some text here.</p>
+        </div>
+    </div>
+
     <!-- Controls -->
      <!-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
