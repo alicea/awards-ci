@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>BDV | Beyondd Staff Awards</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
@@ -17,7 +17,7 @@
     <![endif]-->
   </head>
   <body>
-        <div class="container">
+    <div class="container">
             
     <br />
     <div id="carousel-example-generic" class="carousel slide" data-interval="false" data-ride="carousel">
@@ -27,7 +27,7 @@
     <div class="carousel-inner">
       <div class="item active start">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/email" accept-charset="UTF-8" class="form-inline" id="vote-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                <h1>Beyond D Staff Awards</h1>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/email" accept-charset="UTF-8" class="form-inline" id="vote-form">                <h1>Beyond D Staff Awards</h1>
                 <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                 <div class="form-group">
                     <label class="sr-only" for="email">Email address</label>
@@ -41,7 +41,7 @@
       </div>
       <div class="item award-1">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="awardone-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="awardone-form">                <div class="result alert alert-danger"></div>
                 <h1>Tourettes Award</h1>
                 <p class="lead">Biggest potty mouth</p>
                 <div class="form-group">
@@ -58,7 +58,7 @@
     </div>
     <div class="item award-2">
             <div class="jumbotron">
-                <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="awardtwo-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="awardtwo-form">                    <div class="result alert alert-danger"></div>
                     <h1>Garbage Disposal Award</h1>
                     <p class="lead">Most likely to back for seconds at lunch</p>
                     <div class="form-group">
@@ -75,7 +75,7 @@
     </div>
     <div class="item award-4">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award3-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award3-form">                    <div class="result alert alert-danger"></div>
                 <h1>Thirsty Camel Award</h1>
                 <p class="lead">Most punctual at BeyondD bar on Friday</p>
                 <div class="form-group">
@@ -92,7 +92,7 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award4-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award4-form">                    <div class="result alert alert-danger"></div>
                 <h1>The Bear Grylls Award</h1>
                 <p class="lead">Most likely to survive alone on a deserted Island.</p>
                 <div class="form-group">
@@ -109,7 +109,7 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award5-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award5-form">                    <div class="result alert alert-danger"></div>
                 <h1>The Bill Clinton Award</h1>
                 <p class="lead">Most likely to have skeletons in their closet.</p>
                 <div class="form-group">
@@ -126,7 +126,7 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award6-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award6-form">                    <div class="result alert alert-danger"></div>
                 <h1>Hot Air Award</h1>
                 <p class="lead"> Amazing ability to talk skittles.</p>
                 <div class="form-group">
@@ -143,7 +143,7 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award7-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award7-form">                    <div class="result alert alert-danger"></div>
                 <h1>Road Runner Award</h1>
                 <p class="lead">Fastest to the office depature gate each day.</p>
                 <div class="form-group">
@@ -160,7 +160,7 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award8-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award8-form">                    <div class="result alert alert-danger"></div>
                 <h1>Big Kahuna Award</h1>
                 <p class="lead">Spends most time surfing internet</p>
                 <div class="form-group">
@@ -177,7 +177,7 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award9-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award9-form">                    <div class="result alert alert-danger"></div>
                 <h1>Early bird Award</h1>
                 <p class="lead">Always among the first to arrive to office</p>
                 <div class="form-group">
@@ -194,7 +194,7 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award10-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award10-form">                    <div class="result alert alert-danger"></div>
                 <h1>The Kim Kardashian / Brody Jenner award</h1>
                 <p class="lead">Biggest socialite.</p>
                 <div class="form-group">
@@ -212,7 +212,7 @@
 
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award11-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award11-form">                    <div class="result alert alert-danger"></div>
                 <h1>Gossip Girl xoxo award</h1>
                 <p class="lead">Biggest gossip King or Queen.</p>
                 <div class="form-group">
@@ -230,7 +230,7 @@
 
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award12-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award12-form">                    <div class="result alert alert-danger"></div>
                 <h1>Clark Kent award</h1>
                 <p class="lead">Secretly a super hero.</p>
                 <div class="form-group">
@@ -248,7 +248,7 @@
 
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award13-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award13-form">                    <div class="result alert alert-danger"></div>
                 <h1>TMI totes inapprop! Award</h1>
                 <p class="lead">Most shocking comments.</p>
                 <div class="form-group">
@@ -284,13 +284,7 @@
         </div>
     </div>
 
-      <!-- <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol> -->
-
-        </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
