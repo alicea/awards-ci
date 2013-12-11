@@ -25,7 +25,7 @@ var BDV = (function() {
 					  		$('.carousel').carousel('next');
 					  		$('.nominee').show();
 					  	}else if(result.unanswered){
-					  		$('.carousel').carousel(result.unanswered+1);
+					  		$('.carousel').carousel(result.unanswered);
 					  		$('.user_id').each(function(){
 					  			$(this).val(result.result);
 					  		});
