@@ -48,12 +48,13 @@
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name1" placeholder="Type Name" required>
                     <input type="hidden" id="user_id_1" class="user_id" name="user_id" value="">
-                    <input type="hidden" id="table1" class="table" name="table" value="awardone">
+                    <input type="hidden" id="award1" class="award" name="award" value="1">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
                 </div>
-            </form>        </div>
+            </form>        
+        </div>
     </div>
     <div class="item award-2">
             <div class="jumbotron">
@@ -64,13 +65,204 @@
                         <label class="sr-only" for="name1">Enter Name</label>
                         <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
                         <input type="hidden" id="user_id_2" class="user_id" value="">
-                        <input type="hidden" id="table1" class="table" name="table" value="awardtwo">
+                        <input type="hidden" id="award1" class="award" name="award" value="2">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
                     </div>
-                </form>            </div>
-      </div>
+                </form>            
+            </div>
+    </div>
+    <div class="item award-4">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award3-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>Thirsty Camel Award</h1>
+                <p class="lead">Most punctual at BeyondD bar on Friday</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="3">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award4-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>The Bear Grylls Award</h1>
+                <p class="lead">Most likely to survive alone on a deserted Island.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="4">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award5-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>The Bill Clinton Award</h1>
+                <p class="lead">Most likely to have skeletons in their closet.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="5">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award6-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>Hot Air Award</h1>
+                <p class="lead"> Amazing ability to talk skittles.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="6">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award7-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>Road Runner Award</h1>
+                <p class="lead">Fastest to the office depature gate each day.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="7">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award8-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>Big Kahuna Award</h1>
+                <p class="lead">Spends most time surfing internet</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="8">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award9-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>Early bird Award</h1>
+                <p class="lead">Always among the first to arrive to office</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="9">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award10-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>The Kim Kardashian / Brody Jenner award</h1>
+                <p class="lead">Biggest socialite.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="10">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award11-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>Gossip Girl xoxo award</h1>
+                <p class="lead">Biggest gossip King or Queen.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="11">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award12-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>Clark Kent award</h1>
+                <p class="lead">Secretly a super hero.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="12">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+
+    <div class="item award-5">
+        <div class="jumbotron">
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award13-form"><input name="_token" type="hidden" value="JTcykicMZeypJ44r7lVaFkOB6NeXxvSmPqQNGWPE">                    <div class="result alert alert-danger"></div>
+                <h1>TMI totes inapprop! Award</h1>
+                <p class="lead">Most shocking comments.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="13">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
 
     <!-- Controls -->
      <!-- <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">

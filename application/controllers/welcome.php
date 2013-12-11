@@ -42,14 +42,21 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->helper('url');
 		$this->load->model('Users', '', TRUE);
+		$this->load->model('Answers', '', TRUE);
 		$success = false;
+		$award = false;
 		if ($this->input->post()){
 			$inputEmail = $this->input->post('_email');
 			$user_id = $this->session->userdata('user_id');
-			if ($this->Users->getByEmail($this->input->post('_email')))
+			if ($id = $this->Users->getByEmail($this->input->post('_email')))
 			{
 				//user already exists
-				$response = false;
+				if($number = $this->Answers->getUnAnswered($id)){
+					$award = $number;
+				}
+
+				$response = $id;
+				$this->session->set_userdata('user_id', $id);
 				$success = false;
 				//}
 			}else{
@@ -66,7 +73,7 @@ class Welcome extends CI_Controller {
 		//$response = $this->load->view('awards', null, true);
 
 		$this->output->set_content_type('application/json');
-		$this->output->set_output(json_encode(array('success' => $success, 'result' => $response)));
+		$this->output->set_output(json_encode(array('success' => $success, 'result' => $response, 'unanswered' => $award)));
 
 	}
 
@@ -79,9 +86,8 @@ class Welcome extends CI_Controller {
 		$this->load->model('Users', '', TRUE);
 		$this->load->model('Answers', '', TRUE);
 		if ($this->input->post()){
-			$table = $this->input->post('_table');
-			$user = $this->session->userdata('user_id');
-			if($user == $this->input->post('_id')){
+			$table = 'award'.$this->input->post('_award');
+			if($user = $this->input->post('_id')){
 				if(!$this->Answers->getByUserId($user, $table)){
 
 					if(!$this->Names->getValidName($this->input->post('_name'))){

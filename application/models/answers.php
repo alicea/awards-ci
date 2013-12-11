@@ -12,14 +12,22 @@ class Answers extends CI_Model {
         return $query->result();
     }
 
-    function getByEmail($email)
+    function getUnAnswered($userId)
     {
-        $query = $this->db->from('answers')->where('email',$email)->get();
-        if ($query->num_rows() > 0)
-		{
-		   $row = $query->row_array(); 
-		   return $row['id'];
-		}
+    	$tables = array('award1','award2','award3','award4','award5','award6',
+    		'award7','award8','award9','award10','award11','award12',
+    		'award13');
+    	$count = 1;
+    	foreach ($tables as $key => $table) {
+    		$this->db->select('user_id');
+			$query = $this->db->from($table)->where('user_id',$userId)->get();
+			if ($query->num_rows() == 0)
+			{
+				return $count;
+			}
+			$count++;
+    	}
+
 		return false;
     }
 
@@ -39,11 +47,11 @@ class Answers extends CI_Model {
 
 	function getByUserId($id, $table)
     {
-        $query = $this->db->from($table)->where('id',$id)->get();
+        $query = $this->db->from($table)->where('user_id',$id)->get();
         if ($query->num_rows() > 0)
 		{
 		   $row = $query->row_array(); 
-		   return $row['id'];
+		   return $row['user_id'];
 		}
 		return false;
     }

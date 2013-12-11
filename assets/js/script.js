@@ -14,7 +14,7 @@ var BDV = (function() {
 	
 					$.ajax({
 					  type: "POST",
-					  url: 'http://127.0.0.1/awards-new/index.php/welcome/email',
+					  url: $(form).attr('action'),
 					  data: { _email: $('#email').val() },
 					  success: function(result){
 					  	if(result.success){
@@ -23,6 +23,12 @@ var BDV = (function() {
 					  			$(this).val(result.result);
 					  		});
 					  		$('.carousel').carousel('next');
+					  		$('.nominee').show();
+					  	}else if(result.unanswered){
+					  		$('.carousel').carousel(result.unanswered);
+					  		$('.user_id').each(function(){
+					  			$(this).val(result.result);
+					  		});
 					  		$('.nominee').show();
 					  	}else{
 					  		$(form).find('.result').html('<strong>Warning!</strong> Best check yo self, you have already entered!').show();
@@ -51,7 +57,7 @@ var BDV = (function() {
 					$.ajax({
 					  type: "POST",
 					  url: $(form).attr('action'),
-					  data: { _name: $(thisForm+' .name').val(), _id: $(thisForm+' .user_id').val(), _table: $(thisForm+' [name="table"]').val() },
+					  data: { _name: $(thisForm+' .name').val(), _id: $(thisForm+' .user_id').val(), _award: $(thisForm+' [name="award"]').val() },
 					  success: function(result){
 					  	if(result.success){
 					  		console.log(result);
