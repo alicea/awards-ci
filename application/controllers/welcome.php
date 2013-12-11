@@ -47,7 +47,6 @@ class Welcome extends CI_Controller {
 		$award = false;
 		if ($this->input->post()){
 			$inputEmail = $this->input->post('_email');
-			$user_id = $this->session->userdata('user_id');
 			if ($id = $this->Users->getByEmail($this->input->post('_email')))
 			{
 				//user already exists
@@ -56,13 +55,11 @@ class Welcome extends CI_Controller {
 				}
 
 				$response = $id;
-				$this->session->set_userdata('user_id', $id);
 				$success = false;
 				//}
 			}else{
 				//$this->Users->email = $inputEmail;
 				$response = $this->Users->save(array('email' => $inputEmail));
-				$this->session->set_userdata('user_id', $response);
 				$success = true;
 			}
 		}else{
@@ -95,8 +92,8 @@ class Welcome extends CI_Controller {
 						$success = false;
 						$name = false;
 					}
-						$response = $this->Answers->save(array('vote' => strtolower($this->input->post('_name')), 'user_id' => $this->input->post('_id')), $table);
-						$this->session->set_userdata('user_id', $user);
+						$this->Answers->save(array('vote' => strtolower($this->input->post('_name')), 'user_id' => $this->input->post('_id')), $table);
+						$response = $this->input->post('_id');
 						$success = true;
 				}
 			}
