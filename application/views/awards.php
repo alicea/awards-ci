@@ -272,13 +272,13 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a> -->
     </div>
-    <?php $c = 0; ?>
+    <?php $c = 1; ?>
     <div class="nominee">
-        <h2>Nominee list:</h2>
-        <div class="list-group col-md-6">
+        <h2>Choose a nominee by clicking on their name:</h2>
+        <div class="list-group col-md-4">
         	<?php foreach ($names as $value): ?>
-            	<a href="#" class="list-group-item" data-value="<?php echo $value->name; ?>"><?php echo $value->name; ?></a>
-            	<?php if ($c == 5):?></div><div class="list-group col-md-6"><?php $i = 0; ?><?php endif; ?>
+            	<a href="#" class="list-group-item" data-value="<?php echo ucwords($value->name); ?>"><?php echo $value->name; ?></a>
+            	<?php if ($c == 14):?></div><div class="list-group col-md-4"><?php $c = 1; ?><?php endif; ?>
             	<?php $c++; ?>
             <?php endforeach; ?>
         </div>
@@ -308,7 +308,7 @@
             $('.item .typeahead').typeahead({                                
               name: 'names',                                                          
               local: [<?php foreach ($names as $value): ?>
-                    '<?php echo $value->name; ?>'<?php if ($i != $length):?>,<?php endif; ?>                                          
+                    '<?php echo ucwords($value->name); ?>'<?php if ($i != $length):?>,<?php endif; ?>                                          
                    	<?php $i++; ?>
                       <?php endforeach; ?>],                                         
               limit: 10                                                                   

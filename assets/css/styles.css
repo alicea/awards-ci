@@ -7,6 +7,14 @@ label.error {
 	display: block;
 }
 
+.jumbotron {
+  min-height: 450px;
+}
+
+.list-group-item {
+  text-transform: capitalize;
+}
+
 .nominee {
 	display: none;
 }

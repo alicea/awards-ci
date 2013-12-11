@@ -90,12 +90,12 @@ class Welcome extends CI_Controller {
 			if($user = $this->input->post('_id')){
 				if(!$this->Answers->getByUserId($user, $table)){
 
-					if(!$this->Names->getValidName($this->input->post('_name'))){
+					if(!$this->Names->getValidName(strtolower($this->input->post('_name')))){
 						$response = false;
 						$success = false;
 						$name = false;
 					}
-						$response = $this->Answers->save(array('vote' => $this->input->post('_name'), 'user_id' => $this->input->post('_id')), $table);
+						$response = $this->Answers->save(array('vote' => strtolower($this->input->post('_name')), 'user_id' => $this->input->post('_id')), $table);
 						$this->session->set_userdata('user_id', $user);
 						$success = true;
 				}

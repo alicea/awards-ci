@@ -8,7 +8,7 @@ class Names extends CI_Model {
 
     function get()
     {
-        $query = $this->db->from('names')->get();
+        $query = $this->db->from('names')->order_by('name', 'asc')->get();
         return $query->result();
     }
 
