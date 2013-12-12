@@ -132,7 +132,7 @@
         <div class="jumbotron">
             <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award6-form">                    <div class="result alert alert-danger"></div>
                 <h1>Office Sweetheart Award</h1>
-                <p class="lead">We're all awesome (clearly), but who in the office makes your day by bein... totally amazing?  Nominate your personal office sweetheart!</p>
+                <p class="lead">We're all awesome (clearly), but who in the office makes your day by being... totally amazing?  Nominate your personal office sweetheart!</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -149,7 +149,7 @@
         <div class="jumbotron">
             <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="awardseven-form">                    <div class="result alert alert-danger"></div>
                 <h1>Office Gentleman Award</h1>
-                <p class="lead">We're all awesome (clearly), but who in the office makes your day by bein... totally amazing?  Nominate your personal office gentleman!</p>
+                <p class="lead">We're all awesome (clearly), but who in the office makes your day by being... totally amazing?  Nominate your personal office gentleman!</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
