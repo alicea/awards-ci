@@ -27,8 +27,12 @@
     <div class="carousel-inner">
       <div class="item active start">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/email" accept-charset="UTF-8" class="form-inline" id="vote-form">                <h1>Beyond D Staff Awards</h1>
-                <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/email" accept-charset="UTF-8" class="form-inline" id="vote-form">                <h1>BeyondD Staff Awards</h1>
+                <p class="lead">Howdy Sydneysiders, welcome to the first official BeyondD staff awards!</p>
+                <p class="lead">Please take 5 minutes to nominate your candidates for 14 award categories – the winners will be announced on Thursday, 19 December, during our Secret Santa lunch.</p>
+                <p class="lead"><strong>This is how it works:</strong> You can either type a name into the text field, or select a name from the full staff list displayed below the text field. Once you have selected a nominee, click “Submit Vote” to move on to the next award category.</p>
+                <p class="lead"><strong>Deadline:</strong>Please vote by EOB Wednesday, 18 December</p>
+                <p class="lead">Enjoy!</p>
                 <div class="form-group">
                     <label class="sr-only" for="email">Email address</label>
                     <input type="email" class="form-control input-lg" id="email" placeholder="Enter email address" required>
@@ -42,8 +46,8 @@
       <div class="item award-1">
         <div class="jumbotron">
             <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="awardone-form">                <div class="result alert alert-danger"></div>
-                <h1>Tourettes Award</h1>
-                <p class="lead">Biggest potty mouth</p>
+                <h1>Tourette Award</h1>
+                <p class="lead">Who the f**k has the f*****g biggest potty mouth in this f*****g office? Vote f*****g now!</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name1" placeholder="Type Name" required>
@@ -60,7 +64,7 @@
             <div class="jumbotron">
                 <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="awardtwo-form">                    <div class="result alert alert-danger"></div>
                     <h1>Garbage Disposal Award</h1>
-                    <p class="lead">Most likely to back for seconds at lunch</p>
+                    <p class="lead">Who's most likely to be back for seconds at lunch? Bon ap&eacute;tit!</p>
                     <div class="form-group">
                         <label class="sr-only" for="name1">Enter Name</label>
                         <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -77,7 +81,7 @@
         <div class="jumbotron">
             <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award3-form">                    <div class="result alert alert-danger"></div>
                 <h1>Thirsty Camel Award</h1>
-                <p class="lead">Most punctual at BeyondD bar on Friday</p>
+                <p class="lead">Who's most punctual at the BeyondD bar on a Friday? See you there in 3 - 2 - 1 ...</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -94,7 +98,7 @@
         <div class="jumbotron">
             <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award4-form">                    <div class="result alert alert-danger"></div>
                 <h1>The Bear Grylls Award</h1>
-                <p class="lead">Most likely to survive alone on a deserted Island.</p>
+                <p class="lead">Bears sh*t in the woods - would you if you had to? Tell us who you think is most likely to survive in the wild!</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -111,7 +115,7 @@
         <div class="jumbotron">
             <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award5-form">                    <div class="result alert alert-danger"></div>
                 <h1>The Bill Clinton Award</h1>
-                <p class="lead">Most likely to have skeletons in their closet.</p>
+                <p class="lead">We don't want to know what's (or who's) going on under your desks, but we DO want to know who's most likely to have skeletons in their closet?</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -127,8 +131,8 @@
     <div class="item award-5">
         <div class="jumbotron">
             <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award6-form">                    <div class="result alert alert-danger"></div>
-                <h1>Hot Air Award</h1>
-                <p class="lead"> Amazing ability to talk skittles.</p>
+                <h1>Office Sweetheart Award</h1>
+                <p class="lead">We're all awesome (clearly), but who in the office makes your day by bein... totally amazing?  Nominate your personal office sweetheart!</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -141,11 +145,11 @@
             </form>            
         </div>
     </div>
-    <div class="item award-5">
+     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award7-form">                    <div class="result alert alert-danger"></div>
-                <h1>Road Runner Award</h1>
-                <p class="lead">Fastest to the office depature gate each day.</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award6-form">                    <div class="result alert alert-danger"></div>
+                <h1>Office Gentleman Award</h1>
+                <p class="lead">We're all awesome (clearly), but who in the office makes your day by bein... totally amazing?  Nominate your personal office gentleman!</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -160,9 +164,9 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award8-form">                    <div class="result alert alert-danger"></div>
-                <h1>Big Kahuna Award</h1>
-                <p class="lead">Spends most time surfing internet</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award7-form">                    <div class="result alert alert-danger"></div>
+                <h1>Road Runner Award</h1>
+                <p class="lead">We all would rather spend time outside than inside these office walls - but who's meep-meeping the fastest to the office departure gate each day?</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -177,9 +181,9 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award9-form">                    <div class="result alert alert-danger"></div>
-                <h1>Early bird Award</h1>
-                <p class="lead">Always among the first to arrive to office</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award8-form">                    <div class="result alert alert-danger"></div>
+                <h1>Big Kahuna Award</h1>
+                <p class="lead">Who knows what's hot or not, yay or nay, top or flop, or simply hilarious on the Web right now, and makes an effort to spread the word via email?</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -194,9 +198,9 @@
     </div>
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award10-form">                    <div class="result alert alert-danger"></div>
-                <h1>The Kim Kardashian / Brody Jenner award</h1>
-                <p class="lead">Biggest socialite.</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award9-form">                    <div class="result alert alert-danger"></div>
+                <h1>Early Bird Award</h1>
+                <p class="lead">Who's most likely to be the first to arrive in the office?</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -209,12 +213,11 @@
             </form>            
         </div>
     </div>
-
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award11-form">                    <div class="result alert alert-danger"></div>
-                <h1>Gossip Girl xoxo award</h1>
-                <p class="lead">Biggest gossip King or Queen.</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award10-form">                    <div class="result alert alert-danger"></div>
+                <h1>Kim Kardashian / Brody Jenner Award</h1>
+                <p class="lead">Who's the biggest socialtite in the office?</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -230,9 +233,9 @@
 
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award12-form">                    <div class="result alert alert-danger"></div>
-                <h1>Clark Kent award</h1>
-                <p class="lead">Secretly a super hero.</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award11-form">                    <div class="result alert alert-danger"></div>
+                <h1>Gossip Girl XOXO Award</h1>
+                <p class="lead">Did you hear that someone did something outrageous/funny/weird for some random reason some time last week? Who knows all the office gossip - and is ready to share it?</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -248,9 +251,9 @@
 
     <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award13-form">                    <div class="result alert alert-danger"></div>
-                <h1>TMI totes inapprop! Award</h1>
-                <p class="lead">Most shocking comments.</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award12-form">                    <div class="result alert alert-danger"></div>
+                <h1>Clark Kent Award</h1>
+                <p class="lead">Up up and away! Who is most likely to have a secret identity as a superhero?</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
@@ -266,8 +269,25 @@
 
     <div class="item award-5">
         <div class="jumbotron">
-                <h1>Thank you</h1>
-                <p class="lead">Some text here.</p>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award13-form">                    <div class="result alert alert-danger"></div>
+                <h1>TMI – Totes Inapprop! Award</h1>
+                <p class="lead">We're looking for the person who delivers the most shocking comments. No further explanation necessary.</p>
+                <div class="form-group">
+                    <label class="sr-only" for="name1">Enter Name</label>
+                    <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
+                    <input type="hidden" id="user_id_2" class="user_id" value="">
+                    <input type="hidden" id="award1" class="award" name="award" value="14">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">Submit Vote</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+
+    <div class="item award-5">
+        <div class="jumbotron">
+                <h1>A big thank you to all the potty mouths, road runners, sweethearts, thirsty camels and superheroes who participated – look forward to the awards lunch!</h1>
         </div>
     </div>
 
@@ -292,6 +312,7 @@
     </div>
 
     </div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
