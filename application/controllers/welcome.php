@@ -91,10 +91,11 @@ class Welcome extends CI_Controller {
 						$response = false;
 						$success = false;
 						$name = false;
-					}
+					}else{
 						$this->Answers->save(array('vote' => strtolower($this->input->post('_name')), 'user_id' => $this->input->post('_id')), $table);
 						$response = $this->input->post('_id');
 						$success = true;
+					}
 				}
 			}
 
