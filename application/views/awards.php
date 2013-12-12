@@ -217,7 +217,7 @@
         <div class="jumbotron">
             <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award10-form">                    <div class="result alert alert-danger"></div>
                 <h1>Kim Kardashian / Brody Jenner Award</h1>
-                <p class="lead">Who's the biggest socialtite in the office?</p>
+                <p class="lead">Who's the biggest socialite in the office?</p>
                 <div class="form-group">
                     <label class="sr-only" for="name1">Enter Name</label>
                     <input type="name" class="form-control input-lg typeahead name" id="name2" placeholder="Type Name" required>
