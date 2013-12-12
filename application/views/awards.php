@@ -31,7 +31,7 @@
                 <p class="lead">Howdy Sydneysiders, welcome to the first official BeyondD staff awards!</p>
                 <p class="lead">Please take 5 minutes to nominate your candidates for 14 award categories – the winners will be announced on Thursday, 19 December, during our Secret Santa lunch.</p>
                 <p class="lead"><strong>This is how it works:</strong> You can either type a name into the text field, or select a name from the full staff list displayed below the text field. Once you have selected a nominee, click “Submit Vote” to move on to the next award category.</p>
-                <p class="lead"><strong>Deadline:</strong>Please vote by EOB Wednesday, 18 December</p>
+                <p class="lead"><strong>Deadline:</strong> Please vote by EOB Wednesday, 18 December</p>
                 <p class="lead">Enjoy!</p>
                 <div class="form-group">
                     <label class="sr-only" for="email">Email address</label>
