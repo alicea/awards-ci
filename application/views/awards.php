@@ -147,7 +147,7 @@
     </div>
      <div class="item award-5">
         <div class="jumbotron">
-            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="award6-form">                    <div class="result alert alert-danger"></div>
+            <form method="POST" action="<?php echo base_url();?>index.php/welcome/award" accept-charset="UTF-8" class="form-inline award-form" id="awardseven-form">                    <div class="result alert alert-danger"></div>
                 <h1>Office Gentleman Award</h1>
                 <p class="lead">We're all awesome (clearly), but who in the office makes your day by bein... totally amazing?  Nominate your personal office gentleman!</p>
                 <div class="form-group">
