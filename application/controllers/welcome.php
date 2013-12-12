@@ -87,7 +87,7 @@ class Welcome extends CI_Controller {
 			if($user = $this->input->post('_id')){
 				if(!$this->Answers->getByUserId($user, $table)){
 
-					if(!$this->Names->getValidName(strtolower($this->input->post('_name')))){
+					if(!$this->Names->getValidName($this->input->post('_name'))){
 						$response = false;
 						$success = false;
 						$name = false;
