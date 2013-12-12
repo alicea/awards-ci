@@ -287,7 +287,7 @@
 
     <div class="item award-5">
         <div class="jumbotron">
-                <h1>A big thank you to all the potty mouths, road runners, sweethearts, thirsty camels and superheroes who participated – look forward to the awards lunch!</h1>
+                <h1>Thank you!</h1><p class="lead">To all the <em>potty mouths</em>, <em>road runners</em>, <em>sweethearts</em>, <em>thirsty camels</em> and <em>superheroes</em> who participated – look forward to the awards lunch!</p>
         </div>
     </div>
 
