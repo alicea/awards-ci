@@ -20,16 +20,17 @@
     <div class="container">
             
     <br />
-<?php foreach ($results as $result): ?>
-	<table class="table table-striped">
+    <table class="table table-striped">
+<?php foreach ($results as $key => $result): ?>
 	<?php //foreach ($value as $result): ?>
 		<tr>
+			<td><?php echo 'award '.$key+1; ?></td>
 			<td><?php echo $result['vote']; ?></td>
 			<td><?php echo $result['votes']; ?></td>
 		</tr>
 	<?php //endforeach; ?>
-	</table>
 <?php endforeach; ?>
+</table>
 
 </div>
 
