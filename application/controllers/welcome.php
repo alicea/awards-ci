@@ -38,6 +38,15 @@ class Welcome extends CI_Controller {
 		$this->load->view('awards', $data);
 	}
 
+	public function results()
+	{
+		$this->load->helper('url');
+		$this->load->model('Answers', '', TRUE);
+		$data['results'] = $this->Answers->getResults();
+
+		$this->load->view('results', $data);
+	}
+
 	public function email()
 	{
 		$this->load->helper('url');

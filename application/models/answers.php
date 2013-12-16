@@ -31,6 +31,22 @@ class Answers extends CI_Model {
 		return false;
     }
 
+    function getResults()
+    {
+    	$tables = array('award1','award2','award3','award4','award5','award6',
+    		'award7','award8','award9','award10','award11','award12',
+    		'award13','award14');
+    	$count = 1;
+    	$results = array();
+    	foreach ($tables as $key => $table) {
+    		$this->db->select('user_id');
+			$query = $this->db->query('select vote, COUNT(*) as votes from '.$table.' group by vote having COUNT(*) >1 order by votes desc');
+    		$results[] = $query->row_array();
+    	}
+
+		return $results;
+    }
+
     /**
 	 * save user
 	 *
