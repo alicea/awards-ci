@@ -41,7 +41,7 @@ class Answers extends CI_Model {
     	foreach ($tables as $key => $table) {
     		$this->db->select('user_id');
 			$query = $this->db->query('select vote, COUNT(*) as votes from '.$table.' group by vote having COUNT(*) >1 order by votes desc');
-    		$results[] = $query->row_array();
+    		$results[] = $query;
     	}
 
 		return $results;
