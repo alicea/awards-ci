@@ -1,4 +1,9 @@
+<?php 
 
+$awards = array('Tourette Award', 'Garbage Disposal Award', 'Thirsty Camel Award', 'The Bear Grylls Award', 'The Bill Clinton Award', 'Office Sweetheart Award', 'Office Gentleman Award',
+	'Road Runner Award', 'Big Kahuna Award', 'Early Bird Award', 'Kim Kardashian / Brody Jenner Award', 'Gossip Girl XOXO Award', 'Clark Kent Award', 'TMI – Totes Inapprop! Award');
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,7 +26,7 @@
             
     <br />
     
-    <?php $count = 1; ?>
+    <?php $count = 0; ?>
 <?php foreach ($results as $key => $value): ?>
 	<?php 
 	// print_r($value); 
@@ -32,7 +37,7 @@
 	<?php foreach ($value as $result): ?>
 	
 		<tr <?php echo ($innerCount == 0 ? 'class="success"' : ''); ?>>
-			<td width="20%"><?php echo 'Award '.$count; ?></td>
+			<td width="20%"><?php echo $awards[$count]; ?></td>
 			<td width="40%"><?php echo $result->vote; ?></td>
 			<td width="40%"><?php echo $result->votes; ?></td>
 		</tr>
