@@ -20,14 +20,14 @@
     <div class="container">
             
     <br />
-<?php foreach ($results as $value): ?>
+<?php foreach ($results as $result): ?>
 	<table class="table table-striped">
-	<?php foreach ($value as $result): ?>
+	<?php //foreach ($value as $result): ?>
 		<tr>
 			<td><?php echo $result['vote']; ?></td>
 			<td><?php echo $result['votes']; ?></td>
 		</tr>
-	<?php endforeach; ?>
+	<?php //endforeach; ?>
 	</table>
 <?php endforeach; ?>
 
