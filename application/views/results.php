@@ -23,15 +23,22 @@
     
     <?php $count = 1; ?>
 <?php foreach ($results as $key => $value): ?>
+	<?php 
+	// print_r($value); 
+	// exit();
+	?>
+<table class="table table-striped" style="border: 1px solid #ccc;">
+	<?php $innerCount = 0; ?>
 	<?php foreach ($value as $result): ?>
-	<table class="table table-striped">
-		<tr>
-			<td><?php echo 'Award '.$count; ?></td>
-			<td><?php echo $result['vote']; ?></td>
-			<td><?php echo $result['votes']; ?></td>
+	
+		<tr <?php echo ($innerCount == 0 ? 'class="success"' : ''); ?>>
+			<td width="20%"><?php echo 'Award '.$count; ?></td>
+			<td width="40%"><?php echo $result->vote; ?></td>
+			<td width="40%"><?php echo $result->votes; ?></td>
 		</tr>
-		</table>
+		<?php $innerCount++; ?>
 	<?php endforeach; ?>
+	</table>
 	<?php $count++; ?>
 <?php endforeach; ?>
 
