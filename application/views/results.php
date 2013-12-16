@@ -21,14 +21,16 @@
             
     <br />
     <table class="table table-striped">
+    <?php $count = 1; ?>
 <?php foreach ($results as $key => $result): ?>
 	<?php //foreach ($value as $result): ?>
 		<tr>
-			<td><?php echo 'award '.$key+1; ?></td>
+			<td><?php echo 'Award '.$count; ?></td>
 			<td><?php echo $result['vote']; ?></td>
 			<td><?php echo $result['votes']; ?></td>
 		</tr>
 	<?php //endforeach; ?>
+	<?php $count++; ?>
 <?php endforeach; ?>
 </table>
 
